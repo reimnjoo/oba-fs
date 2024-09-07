@@ -10,7 +10,10 @@ export default function Root() {
     };
 
     return (
-        <div id="wrapper" className="h-screen flex flex-col font-poppins lg:flex-row md:flex-row">
+        <div
+            id="wrapper"
+            className="h-screen flex flex-col font-poppins lg:flex-row md:flex-row"
+        >
             {/* Hamburger Icon for Mobile */}
             {!isSidebarOpen && (
                 <button
@@ -38,7 +41,7 @@ export default function Root() {
             <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
 
             {/* Main Content */}
-            <div>
+            <div className="p-5">
                 <Outlet />
             </div>
         </div>
