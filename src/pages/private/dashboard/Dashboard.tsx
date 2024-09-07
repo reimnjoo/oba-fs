@@ -5,7 +5,7 @@ export default function Dashboard() {
     const { isAuthenticated } = useAuth();
     
     return (
-        <div className="p-5">
+        <div>
             <p>Dashboard</p>
         </div>
     )
